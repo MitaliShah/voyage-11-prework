@@ -1,0 +1,67 @@
+body{
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+#navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #333;
+}
+
+/* hide hamburger */
+#navbar label, #hamburger {
+    display: none;
+  }
+
+/* menu items*/
+
+#navbar ul{
+    list-style-type: none;    
+    text-align: center;
+}
+
+#navbar ul li{
+    display: inline-block;
+    padding: 6px;
+}
+
+#navbar ul li a{
+    color: white;
+    text-decoration: none;
+    border: 1px solid #646d7c;
+    padding: 10px 15px 10px 15px;
+}
+
+#navbar{
+    min-height: 50px; 
+}
+
+@media screen and (max-width: 768px){
+    /*show hamburger*/
+    #navbar label{
+        display: inline-block;
+        color: white;
+        padding: 10px;        
+    }
+    #navbar ul li {
+        display: block;
+      }
+    #navbar a{
+        text-align: center;
+    }
+
+    #navbar ul {
+        display: none;
+    }
+    #navbar input:checked ~ ul {
+        display: block;
+      }    
+}
