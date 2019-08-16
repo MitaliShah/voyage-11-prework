@@ -154,6 +154,9 @@ img{
     font-size: 25px;
     text-shadow: 1px 1px #333;
 }
+
+/*section 2*/
+
 .section-2-container{
     max-width: 80%;
     margin: auto;   
@@ -166,10 +169,6 @@ img{
     line-height: 1.6em;
 }
 
-.section-2-container div{
-    /* border: 1px solid black; */
-    /* padding: 10px; */
-}
 .section-2-column1, .section-2-column2, .section-2-column3{
     flex: 1;
     background: #F2F2F2;
@@ -204,6 +203,7 @@ img{
     border-radius: 7px;
     font-size: 18px;
     color: white;
+    margin-bottom: 20px;
 }
 
 .buttoncontainer{
@@ -220,4 +220,45 @@ img{
 
 .red-button{
     background-color: #C9302C;
+}
+
+/*section 3*/
+
+#section-3{
+    max-width: 80%;
+    margin: auto;   
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 70px;
+}
+
+.section-3-container1, .section-3-container2{
+    flex: 1;
+    margin-right: 42px;
+    background: #F2F2F2;
+    padding-bottom: 20px;
+}
+
+#section-3 h2{
+    text-align: center;
+    color: #666666;
+}
+
+#section-3 p{
+    color: #333333;
+    text-align: left;
+    line-height: 1.6em;
+}
+
+.section-3-button{
+    padding: 10px 30px;
+    border-radius: 7px;
+    font-size: 18px;
+    background-color: white;
+    color: #666666;
+}
+
+.section-3-buttoncontainer{
+    text-align: right;
+    margin-right: 40px;    
 }
