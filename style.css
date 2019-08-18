@@ -1,4 +1,4 @@
-body{
+body html{
     font-size: 16px;
     box-sizing: border-box;
     margin: 0;
@@ -14,6 +14,7 @@ img{
     width: 100%;
     position: fixed;
     top: 0;
+    left: 0;
     min-height: 50px;
     background: #333;
     z-index: 5;
@@ -114,29 +115,12 @@ img{
     background-size: cover;
     position: relative;
     height: 73vh;
-    padding: 0 15px;
     padding: 20px 0 70px 0;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
   
-
-/* #section-1{
-
-    padding: 20px 0 70px 0;
-}
-#hero-image{
-    background-image: url(./img/bg-1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 73vh;
-    padding: 0 15px;
-} */
-
 #hero-text {
     color: white;
     position: relative;
@@ -158,24 +142,34 @@ img{
 /*section 2*/
 
 .section-2-container{
-    max-width: 80%;
+    max-width: 70%;
     margin: auto;   
     display: flex;
     flex-wrap: wrap;
 }
 
-.section-2-container h2, p{
+.section-2-container h2{
     padding: 0 15px 0 15px;
-    line-height: 1.6em;
+    /* line-height: 1.6em; */
+    margin-right: 0;
+}
+.section-2-container p{
+    padding: 0 15px 0 15px;
+    margin-right: 0;
 }
 
 .section-2-column1, .section-2-column2, .section-2-column3{
     flex: 1;
     background: #F2F2F2;
     /* margin: 10px; */
-    font-size: 1em;
+    font-size: 15px;
     text-align: left;
-    margin-right: 42px;
+    /* margin-right: 42px; */
+    margin: 0 20px 0 0;
+}
+
+ .section-2-column3{
+    margin-right: 0;
 }
 .section-2-column1 h2{
     color: #178A27;
@@ -225,18 +219,32 @@ img{
 /*section 3*/
 
 #section-3{
-    max-width: 80%;
+    max-width: 70%;
     margin: auto;   
     display: flex;
     flex-wrap: wrap;
     padding-top: 70px;
+    font-size: 15px;
 }
 
 .section-3-container1, .section-3-container2{
     flex: 1;
-    margin-right: 42px;
+    margin-right: 30px;
     background: #F2F2F2;
     padding-bottom: 20px;
+}
+
+.section-3-container1 :last-child, .section-3-container2 :last-child{
+    margin-right: 0;
+}
+
+.section-3-description{
+    padding: 20px;
+    margin-right: 0;
+}
+
+.section-3-container2{
+    margin-right: 0;
 }
 
 #section-3 h2{
@@ -261,4 +269,143 @@ img{
 .section-3-buttoncontainer{
     text-align: right;
     margin-right: 40px;    
+}
+
+.service-area{    
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding-top: 70px;
+    display: flex;
+    justify-content: center; 
+}
+
+.service-area-container{
+    width: 100%;
+}
+
+.service-area-container h1{
+    color: #fff;
+    text-transform: capitalize;
+    text-shadow: 2px 2px #aaa;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.service-area-container p{
+    color: #fff;
+    font-size: 18px;
+}
+.service-container{
+    background-image: url(./img/bg-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
+    height: 20vh;
+    /* padding: 0 15px; */
+    padding: 20px 0 70px 0;
+    text-align: center;    
+    background-attachment: fixed;
+    opacity: 0.9;
+    line-height: 1.6em;  
+}
+
+.section-4{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.section-5-container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 70%;
+    margin: auto;    
+}
+
+.section-5-container h2{
+    color: #666666;
+}
+
+.section-5-container p{
+    color: #333;
+    font-size: 15px;
+}
+
+.section-5-container1 , .section-5-container2, .section-5-container3, .section-5-container4{
+    flex: 1;
+    margin: 0 10px 0 0;
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 0 0 10px 0;
+}
+.section-5-container1 p, .section-5-container2 p, .section-5-container3 p, .section-5-container4 p{
+    padding: 10px 20px;
+    text-align: left;
+    margin: 0;
+    color: #333;
+}
+
+.section-5-container4{
+    margin-right: 0;
+}
+
+.section-5-button{
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.section-5-button button{
+    /* padding: 10px 15px; */
+    background-color: white;
+}
+
+.section-5-readitbutton, .section-5detailsbutton{
+    padding: 10px 30px;
+    background-color: white;
+    border-radius: 5px;
+}
+.section-6-description{
+    /* background: #F2F2F2; */
+    padding: 15px 0 0 0;
+    line-height: 1.6em;
+    color: #333;
+    margin-top: 0;
+    font-size: 15px;
+}
+.section-6-button{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #cdcdcd;
+    font-size: 18px;
+    color: #666;
+}
+.section-6 {
+    max-width: 70%;
+    margin: auto;
+    display: flex;
+    background: #F2F2F2;
+    margin-top: 40px;   
+}
+.section-6-container{
+    flex: 1;
+}
+.section-6-description h2 , p{
+    /* flex: 1; */
+    margin-right: 70px;
+    padding-left: 30px;
+    padding-right: 0;    
+}
+
+.section-6 h2{
+    color: #666666;
+}
+
+.section-6-buttoncontainer button{
+    margin-left: 30px;
+}
+
+.section-6-button{
+    padding: 10px 30px;
 }
