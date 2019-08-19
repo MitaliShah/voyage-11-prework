@@ -1,4 +1,4 @@
-body html{
+body , html{
     font-size: 16px;
     box-sizing: border-box;
     margin: 0;
@@ -409,3 +409,88 @@ img{
 .section-6-button{
     padding: 10px 30px;
 }
+
+/*contact form*/
+
+#section-7-container{
+    background-image: url(./img/bg-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    padding: 20px 0 70px 0;
+    text-align: center;    
+    background-attachment: fixed;
+    opacity: 0.9;
+    line-height: 1.6em;  
+    margin-top: 60px;
+}
+
+.contact-form-container{
+    max-width: 60%;
+    margin: auto;
+}
+.contact-form-container h1{
+    color: white;
+    text-shadow: 2px 2px #333;
+    font-size: 36px;
+    line-height: 1.4;
+}
+
+.contact-form-container p{
+    max-width: 80%;
+    color: #000;
+    background: rgba(242, 242, 242, 0.4) none repeat scroll 0 0;
+    margin: 30px 70px 30px 70px;
+    font-size: 19px;
+    border-radius: 5px;
+    padding: 15px 0;
+}
+
+.form-group{
+    color: #000;
+    /* background: rgba(242, 242, 242, 0.4) none repeat scroll 0 0; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-group ::placeholder{
+    color: #000;
+}
+.form-group1{
+    flex: 1;
+    max-width:35%;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.form-group2{
+    flex: 1;
+    max-width: 30%;
+    margin-right:80px;
+}
+/* .form-group input{
+    margin: 0 50px 0 50px;
+}
+.form-group textarea{
+    margin: 0 50px 0 50px;
+} */
+
+.form-group input, textarea{
+    background: rgba(242, 242, 242, 0.4) none repeat scroll 0 0;
+    width: 100%;
+    height: auto;    
+    padding: 3px 20px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 5px;
+    border: none;
+}
+.form-group2 button{
+    background: #262628;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    border-color: #ccc;
+    cursor: pointer;
+}
+
