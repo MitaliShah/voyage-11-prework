@@ -15,10 +15,10 @@
             <input type="checkbox" id="hamburger"/>
             <!--menu items-->            
             <ul id="nav">
-                <li><a href="">Homepage</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#section-1">Homepage</a></li>
+                <li><a href="#section-2">About Us</a></li>
+                <li><a href="#section-4">Services</a></li>
+                <li><a href="#section-7">Contact</a></li>
                 <li><a href="">External</a></li>
             </ul>
         </nav>
@@ -91,7 +91,7 @@
 
         </div>
 
-        <div class="section-4">
+        <div id="section-4">
             <section class="service-container">
                 <div class="service-area">
                     <div class="service-area-container">
@@ -169,7 +169,7 @@
             </section>
         </div>
 
-        <div class="section-7">
+        <div id="section-7">
             <section id="section-7-container">
                 <div class="contact-form-container">
                     <h1>
@@ -199,9 +199,39 @@
                         
                     </div>
 
-                    </div>
-                    
+                    </div>         
             </div>
+            <footer>
+                <div class="footer-container1">
+                    <h1>
+                        Use it free!
+                    </h1>
+                    <p>
+                        “This website is for prework-voyage-11.
+                        <br>
+                        No backlink is required to use this layout.”
+                    </p>
+                    <hr>
+                </div>
+                <div class="footer-container2">
+                    <p class="copy">Copyright © 2019 chingu-prework | Design: voyage-11</p>
+                </div>
+                <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
+            </footer>
+            <script>
+                window.onscroll = function() {scrollFunction()};
 
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        document.getElementById("myBtn").style.display = "block";
+                    } else {
+                        document.getElementById("myBtn").style.display = "none";
+                    }
+                }
+                function topFunction() {
+                    document.body.scrollTop = 0; // For Safari
+                    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                }
+            </script>
 </body>
 </html>
