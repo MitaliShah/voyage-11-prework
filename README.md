@@ -6,4 +6,4 @@
 ### Resources used for this project: [Parallax Effect](https://www.youtube.com/watch?v=JttTcnidSdQ). [scroll to top function](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp). [Images from](https://www.pexels.com/)
 
 ## Instructions: 
-### No installation is necessary too run this project. You can simply access the project using [this link](https://mitalishah.github.io/voyage-11-prework/).
+### No installation is necessary to run this project. You can simply access the project using [this link](https://mitalishah.github.io/voyage-11-prework/).
